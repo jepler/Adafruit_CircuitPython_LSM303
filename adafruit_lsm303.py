@@ -56,7 +56,6 @@ from adafruit_bus_device.i2c_device import I2CDevice
 __version__ = "0.0.0-auto.0"
 __repo__ = "https://github.com/adafruit/Adafruit_CircuitPython_LSM303.git"
 
-# pylint: disable=bad-whitespace
 _ADDRESS_ACCEL             = const(0x19)  # (0x32 >> 1)       // 0011001x
 _ADDRESS_MAG               = const(0x1E)  # (0x3C >> 1)       // 0011110x
 _ID                        = const(0xD4)  # (0b11010100)
@@ -133,7 +132,6 @@ MAGRATE_220                = const(0x07)  # 200 Hz
 _LSM303ACCEL_MG_LSB        = 16704.0
 _GRAVITY_STANDARD          = 9.80665      # Earth's gravity in m/s^2
 _GAUSS_TO_MICROTESLA       = 100.0        # Gauss to micro-Tesla multiplier
-# pylint: enable=bad-whitespace
 
 
 class LSM303(object):
